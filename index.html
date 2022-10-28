@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Rubik:wght@300;400;500&family=Sora&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="reg-header" class="header">
+        <h3 id="logo">Uyimolo</h3>
+        <nav class="navbar">
+            <a href="index.html" class="nav-link">Join us</a>
+            <a href="login.html" class="nav-link">Sign-in</a>
+        </nav>
+    </header>
+    <main id="reg-details" class="content">
+        <form action="index.html" id="reg-form" class="form">
+            <h1>Join us Today</h1><br>
+            <div class="form-groups">
+            <div class="form-group">
+                <label for="f-name" class="label">First Name:</label>
+                <input type="text" class="input" id="f-name" name="f-name" placeholder="John" required>
+            </div>
+            <div class="form-group">
+                <label for="l-name" class="label">Last Name:</label>
+                <input type="text" class="input" id="l-name" name="l-name" placeholder="Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="email" class="label">Email:</label>
+                <input type="email" class="input" id="email" name="email" placeholder="Johndoe@uyi.com">
+            </div>
+            <div class="form-group">
+                <label for="phone" class="label">Phone Number:</label>
+                <input type="tel" class="input" id="phone" name="phone" placeholder="00-000-000-000">
+            </div>
+            <div class="form-group">
+                <label for="sex" class="label">Sex:</label>
+                <select name="sex" id="sex" class="input" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">Others</option>
+                    <option value="private">Prefers not to say</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="dob" class="label">Date of Birth:</label>
+                <input type="date" class="input" id="dob" name="dob" required>
+            </div>
+            <div class="form-group" id="color-selector">
+                <label for="color" class="label">favourite Color:</label>
+                <input type="color" class="input">
+            </div>
+        </div>
+
+            <div class="submit">
+                <input type="submit" value="Join Us" class="submit" id="submit">
+            </div>
+            <p>Already a member? <a href="login.html">Login here</a></p>
+        </form>
+    </main>
+</body>
+</html>

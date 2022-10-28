@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "sora", "montserrat";
+}
+:root {
+  --inputborder: rgb(44, 43, 43);
+  --text: rgb(244, 244, 248);
+  --primary: rgb(148, 102, 160);
+  --white: #f2f2f2;
+  --accent: rgb(177, 39, 85);
+  --accentlight: rgb(182, 76, 111);
+  font-size: 17px;
+}
+h1 {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.5em;
+}
+a{
+  color: var(--text);
+}
+a:hover {
+  color: var(--accent);
+}
+body {
+  background: url(images/pexels-jv-buenconcejo-2719301.jpg) no-repeat;
+  padding: 0 0 3em 0;
+  width: 100%;
+}
+.header {
+  background-color: rgba(0, 0, 0, 0.226);
+  padding:.5em 1em ;
+  margin-bottom: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-link {
+  margin-left: 1em;
+  text-decoration: none;
+  position: relative;
+}
+.nav-link::before {
+  content: "";
+  position: absolute;
+  top: 2em;
+  width: 0%;
+  height: 2px;
+  transition: .5s;
+  background-color: var(--white);
+}
+.nav-link:hover {
+  color: var(--white);
+}
+.nav-link:hover.nav-link::before {
+  width: 100%;
+}
+.header .navbar a:hover{
+  
+}
+#logo {
+  color: var(--accent);
+  border-bottom: 3px solid var(--accent);
+  border-top: 3px solid var(--accent);
+  width: fit-content;
+  padding: 0.2em 0;
+  cursor: pointer;
+}
+.form {
+  width: 90%;
+  max-width: 500px;
+  margin: auto;
+  padding: 1em;
+  background: rgba(64, 58, 117, 0.26);
+  border-radius: 0.5em;
+}
+.form-group {
+  padding: 0.7em 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 0.5em;
+  justify-content: center;
+}
+label {
+  font-size: 1em;
+  color: var(--text);
+  cursor: pointer;
+}
+.input {
+  padding: 0.7em;
+  border-radius: 0.3em;
+  border: none;
+  background: #f3f3f3;
+  cursor: pointer;
+}
+.input:hover {
+  background-color: rgba(255, 255, 255, 0.425);
+}
+#color-selector {
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  margin: auto;
+}
+#color-selector .input {
+  width: 100%;
+}
+#submit {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.7em 5em;
+  background-color: var(--primary);
+  border: none;
+  font-size: 1em;
+  color: var(--white);
+  border-radius: 0.5em;
+  transition: 0.5s;
+  margin: 1em auto;
+  display: block;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: rgba(230, 84, 84, 0.849);
+}
+.option {
+  color: var(--white);
+  text-align: center;
+  padding: 1em;
+}
+.social-options {
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+}
+.social-options button {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 0.5em;
+  background-color: var(--white);
+  border: none;
+  margin-bottom: 2em;
+  border-radius: 0.3em;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.social-options button:hover {
+  background-color: var(--primary);
+}
+.google-logo,
+.facebook-logo {
+  text-decoration: none;
+}
+.facebook-logo {
+  font-family: "Monserrat";
+}
+.facebook-logo button p {
+  color: #4267b2;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.google-logo {
+  display: flex;
+  font-family: "Montserrat";
+}
+.google-logo p {
+  color: #4285f4;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+.google-logo p:nth-child(2) {
+  color: #ea4335;
+}
+.google-logo p:nth-child(3) {
+  color: #fbbc05;
+}
+
+.google-logo p:nth-child(4) {
+  color: #4285f4;
+}
+.google-logo p:nth-child(5) {
+  color: #33a853;
+}
+.google-logo p:nth-child(6) {
+  color: #ea4335;
+}
+#quotes {
+  width: 100%;
+  max-width: 600px;
+  color: var(--white);
+  position: relative;
+  margin: auto;
+  line-height: 1.6;
+  padding: 1em;
+  text-align: justify;
+  background: rgba(64, 58, 117, 0.26);
+  font: "sora";
+}
+#quotes::first-letter {
+  font-size: 2em;
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    padding: .5em 4em;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 4em;
+  }
+  .form-groups {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0 1em;
+    justify-content: center;
+  }
+  #color-selector {
+    grid-column: 1 / 3;
+    justify-content: center;
+  }
+  #color-selector .input {
+    width: 20%;
+  }
+}
